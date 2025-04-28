@@ -1,8 +1,14 @@
 +++
-title= "Apollo Theme"
+title= "日落果的 Blog"
 template = "homepage.html"
 +++
 
-Thanks for checking out this theme!
+# 你好👋，欢迎来到日落果的 Blog
 
-Checkout all the [options you can configure](./posts/configuration) and the [example pages](./tags/example/).[Test Typst](./posts/test)
+## info
+ - 好耶，是日落果。
+ - 能看到这个页面，想必你一定是一个非常有趣的人，很高兴认识你。
+ - 这里是日落果，在读学生。喜欢折腾各种新奇古怪的东西。
+
+## posts
+- [梦的开始 - 博客复活](posts/dream-start)

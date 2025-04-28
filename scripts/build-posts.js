@@ -10,25 +10,22 @@ const fontPaths = [
   resolve(root, 'fonts'),
   resolve(root, 'assets/fonts'),
   resolve(root, 'asset/fonts'),
-  resolve(root, 'static/fonts')
-]
+  resolve(root, 'static/fonts'),
+];
 
 const themes = ['light', 'dark'];
 
 function printWithDepth(depth, ...args) {
-  if(depth > 0) {
+  if (depth > 0) {
     depth -= 1;
     console.log('    '.repeat(depth) + '|---', ...args);
   }
 }
 
 function isWorkspace(dir) {
-  const res = fs.readdirSync(dir, { withFileTypes: true })
-    .find((d) => 
-        d.isFile() && (
-          d.name === 'main.typ' || d.name === 'build-config.toml'
-        )
-    );
+  const res = fs
+    .readdirSync(dir, { withFileTypes: true })
+    .find(d => d.isFile() && (d.name === 'main.typ' || d.name === 'build-config.toml'));
   return res;
 }
 
@@ -39,7 +36,7 @@ function parseBuildConfig(path) {
   let res = {};
 
   for (const [name, { entry }] of Object.entries(config.entries)) {
-    res[name] = entry
+    res[name] = entry;
   }
 
   return res;
@@ -52,7 +49,7 @@ function compileEntry(compiler, typstRoot, entry, artifactRoot, outputPath, dept
   for (const theme of themes) {
     printWithDepth(depth + 1, 'Theme:', theme);
     fs.mkdirSync(join(artifactPath, theme), { recursive: true });
-    
+
     const vec = compiler.vector(entryPath, theme);
 
     fs.writeFileSync(join(artifactPath, theme, 'main.multi.sir.in'), vec);
@@ -64,20 +61,26 @@ function compileWorkspace(compiler, typstRoot, path, artifactRoot, depth) {
   printWithDepth(depth, 'Compile Workspace: ', path);
   const workspacePath = join(typstRoot, path);
 
-  const configPath = fs.readdirSync(workspacePath, { withFileTypes: true })
-    .find((d) => 
-        d.isFile() && d.name === 'build-config.toml'
-    );
+  const configPath = fs
+    .readdirSync(workspacePath, { withFileTypes: true })
+    .find(d => d.isFile() && d.name === 'build-config.toml');
 
   if (configPath) {
     const config = parseBuildConfig(join(workspacePath, 'build-config.toml'));
     for (const [name, entry] of Object.entries(config)) {
       const entryPath = join(path, entry);
       printWithDepth(depth + 1, `Compile: ${entryPath}:${name}`);
-      compileEntry(compiler, typstRoot, join(path, entry), artifactRoot, join(path, name), depth + 1);
+      compileEntry(
+        compiler,
+        typstRoot,
+        join(path, entry),
+        artifactRoot,
+        join(path, name),
+        depth + 1,
+      );
     }
   } else {
-    const mainPath = join(path, 'main.typ')
+    const mainPath = join(path, 'main.typ');
     printWithDepth(depth + 1, 'Compile:', mainPath);
     compileEntry(compiler, typstRoot, mainPath, artifactRoot, path, depth + 1);
   }
@@ -95,13 +98,13 @@ function compileDirectory(compiler, typstRoot, dir, artifactRoot, depth = 0) {
 
   for (const p of fs.readdirSync(join(typstRoot, dir), { withFileTypes: true })) {
     const subPath = join(dir, p.name);
-    if(p.isFile()) {
-      if(extname(p.name) === '.typ') {
+    if (p.isFile()) {
+      if (extname(p.name) === '.typ') {
         compileFile(compiler, typstRoot, dir, p.name, artifactRoot, depth + 1);
       } else {
         printWithDepth(depth + 1, 'Skip:', subPath);
       }
-    } else if(isWorkspace(join(typstRoot, subPath))) {
+    } else if (isWorkspace(join(typstRoot, subPath))) {
       compileWorkspace(compiler, typstRoot, subPath, artifactRoot, depth + 1);
     } else {
       compileDirectory(compiler, typstRoot, subPath, artifactRoot, depth + 1);
@@ -116,7 +119,7 @@ function main() {
   fs.mkdirSync(artifactRoot, { recursive: true });
   /// Links Apollo package
   try {
-    execSync(`typst-ts-cli package link --manifest ${root}/packages/typst-apollo/typst.toml`);
+    execSync(`typst-ts-cli package link --manifest "${root}/packages/typst-apollo/typst.toml"`);
   } catch {}
 
   console.log('[typst] using fonts:');

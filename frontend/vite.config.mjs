@@ -11,10 +11,7 @@ export default defineConfig({
       targets: [
         {
           src: normalizePath(
-            resolve(
-              __dirname,
-              '../node_modules/@myriaddreamin/typst-ts-renderer/pkg/typst_ts_renderer_bg.wasm',
-            ),
+            'node_modules/@myriaddreamin/typst-ts-renderer/pkg/typst_ts_renderer_bg.wasm',
           ),
           dest: resolve(__dirname, '../static/wasm/'),
         },
