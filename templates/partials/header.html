@@ -37,10 +37,7 @@
 
     {% else %}
     <title>
-        {% if page.title %} {{ page.title }}
-        {% elif section.title %} {{ section.title }}
-        {% elif config.title %} {{ config.title }}
-        {% else %} Post {% endif %}
+        {{ config.title }}
     </title>
 
         {% if not page_has_og_title %}

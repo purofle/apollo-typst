@@ -11,7 +11,8 @@
     "reset": "rm -rf static/typst && cd frontend && npm run reset",
     "build:fe": "pnpm --filter blog-frontend run build:prod",
     "build:typ": "node scripts/build-posts.js",
-    "serve": "zola serve"
+    "serve": "zola serve",
+    "build:all": "pnpm build:typ && pnpm build:fe && zola build"
   },
   "dependencies": {},
   "devDependencies": {

@@ -12,3 +12,5 @@ template = "homepage.html"
 
 ## posts
 - [梦的开始 - 博客复活](posts/dream-start)
+
+这个博客所有内容都使用 [Typst](https://typst.app/) 进行编写排版，使用 [Zola](https://www.getzola.org/) 进行构建，希望能给你带来不一样的体验。

@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://blog.dark-flames.com"
+base_url = "https://blog.archlinux.tech"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -11,7 +11,7 @@ theme = "apollo"
 
 taxonomies = [{ name = "tags", feed = true }]
 
-title = "日落果的 Blog"
+title = "日落果的Blog"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -24,11 +24,12 @@ menu = [
   { name = "/posts", url = "/posts", weight = 2 },
   { name = "/tags", url = "/tags", weight = 3 },
   { name = "/about", url = "/about", weight = 4 },
+  { name = "/link", url = "/link", weight = 5 },
 ]
 
 socials = [
   { name = "twitter", url = "https://twitter.com/purofle", icon = "twitter" },
-  { name = "github", url = "https://github.com/github", icon = "github" },
+  { name = "github", url = "https://github.com/purofle", icon = "github" },
 ]
 
 insert_anchor_links = "heading"
