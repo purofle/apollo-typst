@@ -17,6 +17,7 @@
   "Source Han Serif SC",
   "Source Han Serif TC",
   "Linux Libertine",
+  "LXGW WenKai"
 )
 
 #let code-font = (
