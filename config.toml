@@ -12,6 +12,7 @@ theme = "apollo"
 taxonomies = [{ name = "tags", feed = true }]
 
 title = "日落果的Blog"
+description = "你好，欢迎来到日落果的Blog～"
 
 [markdown]
 # Whether to do syntax highlighting
