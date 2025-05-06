@@ -15,3 +15,8 @@ template = "homepage.html"
 - [在 Finder 中使用 VSCode 打开文件夹](posts/open-folder-in-finder-through-vscode)
 
 这个博客所有内容都使用 [Typst](https://typst.app/) 进行编写排版，使用 [Zola](https://www.getzola.org/) 进行构建，希望能给你带来不一样的体验。
+
+## 这里是一些友情链接
+- [AtomAlpaca's Blog](https://blog.atal.moe)
+- [MBRjun-Blog](https://www.mbrjun.cn)
+- [Alan の blog](https://blog.alanlin.icu)
