@@ -20,3 +20,4 @@ template = "homepage.html"
 - [AtomAlpaca's Blog](https://blog.atal.moe)
 - [MBRjun-Blog](https://www.mbrjun.cn)
 - [Alan の blog](https://blog.alanlin.icu)
+- [白糖的记事本](https://blog.sugarmgp.icu)
