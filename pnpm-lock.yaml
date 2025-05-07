@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@myriaddreamin/typst-ts-node-compiler':
-        specifier: ^0.5.0-rc6
-        version: 0.5.4
+        specifier: ^0.6.0
+        version: 0.6.0
       toml:
         specifier: ^3.0.0
         version: 3.0.0
@@ -18,11 +18,11 @@ importers:
   frontend:
     dependencies:
       '@myriaddreamin/typst-ts-renderer':
-        specifier: ^0.5.0-rc6
-        version: 0.5.4
+        specifier: ^0.6.0
+        version: 0.6.0
       '@myriaddreamin/typst.ts':
-        specifier: ^0.5.0-rc6
-        version: 0.5.4(@myriaddreamin/typst-ts-renderer@0.5.4)
+        specifier: ^0.6.0
+        version: 0.6.0(@myriaddreamin/typst-ts-renderer@0.6.0)
     devDependencies:
       '@types/node':
         specifier: ^20.14.10
@@ -296,84 +296,84 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@myriaddreamin/typst-ts-node-compiler-android-arm-eabi@0.5.4':
-    resolution: {integrity: sha512-jptHQK/GN7RCDI4FkGKrec3x3YKFogIw1kpMFYYscoOEntEF4MGJs2FM3vR3bLXGSAR54WlPI6dXPKCYuzVSOg==}
+  '@myriaddreamin/typst-ts-node-compiler-android-arm-eabi@0.6.0':
+    resolution: {integrity: sha512-Gfrf9Fky5iYtutGWYwqRC4gvllK1p1q6YELCbycI47NCFptONI++3dfub4PixWRn9m8NrmaNFIBQSyLHWsvbLw==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [android]
 
-  '@myriaddreamin/typst-ts-node-compiler-android-arm64@0.5.4':
-    resolution: {integrity: sha512-xOt+07nYDu3KiOWPnl62es+rThKYRdbOWQPY4hcFqqC5VRTfZZXUBRKdsG+W8qu0gJ513VLmW9HVlkv2PHTW0Q==}
+  '@myriaddreamin/typst-ts-node-compiler-android-arm64@0.6.0':
+    resolution: {integrity: sha512-EzO6W4xELC6at30hSkkOp5BveszwCmTWceu0PMh6lPxeQF1vnjxUK60MLFfJ40zb1TOXsj4l2pbdBoGqLznC1g==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [android]
 
-  '@myriaddreamin/typst-ts-node-compiler-darwin-arm64@0.5.4':
-    resolution: {integrity: sha512-mtuIjL4KptMhy+rJY0pUv8s8kzFFYKFDyhDQIndsi7P9jYtIUkjJqhg3rXmMUcbVJEEFlaUJ+I+wFQbDuddSlg==}
+  '@myriaddreamin/typst-ts-node-compiler-darwin-arm64@0.6.0':
+    resolution: {integrity: sha512-8tR1GqFr+q4rNZm8z0230eF7eRCVCSaUefDw1+Qw8EnDPIvwEP8bT0/u2YqHmxthfVfs1msV8hDpRKVeBa6E3g==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@myriaddreamin/typst-ts-node-compiler-darwin-x64@0.5.4':
-    resolution: {integrity: sha512-rP8ghx3+vCE0vVat6POYNEkXsjXQn1iyy3pPfLTFtSgQRoJoPJJnDB+tkToCiTZQwvo9aFyrY0LOyH8mpm+BYQ==}
+  '@myriaddreamin/typst-ts-node-compiler-darwin-x64@0.6.0':
+    resolution: {integrity: sha512-eytv5ifNvhux9naqEb+4pu1Z4ghQBWiybP4lT/aB44I9H5xjmtYQxiKwNBz54am6RLiMcyLpw/xFdeB13bsdWA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-arm-gnueabihf@0.5.4':
-    resolution: {integrity: sha512-boM8bVPRL/Ekff51urc3HiY2oKVdL2x36MnHgurAown3iK4OMa0JPDGkxpnuRKbDQEZDXQB1xljVGLaAqqecCg==}
+  '@myriaddreamin/typst-ts-node-compiler-linux-arm-gnueabihf@0.6.0':
+    resolution: {integrity: sha512-b20do+PmbsYq07QlTW8uLU3MaoAm6DSCx1IrCEAlUpNH+/29x51Rvyq5JeRrYVOtkR6BxPzyhCM79r5jOkewbQ==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-arm64-gnu@0.5.4':
-    resolution: {integrity: sha512-DIYH2WXyzeh+0sicGXICm8E/0P5ZAmbCIcGt9sgqXNe2YI/JjXoRDLLm1xN0Y5HD3fiCb/pRTRoeXFpp0u/Fjg==}
+  '@myriaddreamin/typst-ts-node-compiler-linux-arm64-gnu@0.6.0':
+    resolution: {integrity: sha512-AM92MVfEbISYvIA8NwPl2l78nOZIh5er5qQ/NZw2kx4YgTKgklJINEPHXm/aAk7PcpX7G10P45D/xGd5KpX9HQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-arm64-musl@0.5.4':
-    resolution: {integrity: sha512-KNjhfEgPaVaN+0hJ97UKY72jtpMFTA4dnP4iEoB6VX2dunVrbTJbCpjG8Sfml4HJYt0H4gYKsa4LqQzgqFJ6eQ==}
+  '@myriaddreamin/typst-ts-node-compiler-linux-arm64-musl@0.6.0':
+    resolution: {integrity: sha512-nSokVjKQR0ZH7Jub53q7he89+m72RSbL97exSedkB4OdZAi9tAxGFIgceGJuN5AC+DiNtMmqsPwlJiERUjgPhQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-x64-gnu@0.5.4':
-    resolution: {integrity: sha512-iqYx3UFrrN0E8bg+NuvTptP2FndJNtt7tlU6Dsh6vjaay5IaBLIAtn9Yf9dPzsqWzHE3nwTq0yjoLfLEtY4a3w==}
+  '@myriaddreamin/typst-ts-node-compiler-linux-x64-gnu@0.6.0':
+    resolution: {integrity: sha512-3Y2ORiYuCTzQkiHSCHWiGuzTBbNvHTB2lCr3DDsZdvTZ2LZMifPwwICN26X3tlnt6GyC3o/ejZBcMnfNqYbdCw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-x64-musl@0.5.4':
-    resolution: {integrity: sha512-ROleNG0SD50+FoYJQA/9sai0FzNMh94ZAUVbSJFz474olJHSYQ8xqdIiGlpFA6XXPG6TKBedzbDUVYVXWFI+NQ==}
+  '@myriaddreamin/typst-ts-node-compiler-linux-x64-musl@0.6.0':
+    resolution: {integrity: sha512-b+kTb4vI0sFTkPtIAUE+UqjhZ4kTiAkh4F/2QKnFitAsURlLcRwTcMc9NJm6SXwW1OM0nPj1IGTfUOFpqLOIPQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@myriaddreamin/typst-ts-node-compiler-win32-arm64-msvc@0.5.4':
-    resolution: {integrity: sha512-Ihh40WW2cB0TUUMfJEOoH5MzQXmPSZc0OcAWMHj8A5Rr4pNNAr1gcJTeB6UHazoRQ8uQG5hg3CqCFydAIbXKfQ==}
+  '@myriaddreamin/typst-ts-node-compiler-win32-arm64-msvc@0.6.0':
+    resolution: {integrity: sha512-04omIPrXSsRKu4XDhj1WZ9uMjdcFcejBGzyOEV351HVDqg5kxgDB32iG3oLySLrzEcbi9WwI5Si46WrW0wh4mA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@myriaddreamin/typst-ts-node-compiler-win32-x64-msvc@0.5.4':
-    resolution: {integrity: sha512-umEuUW6mn68JTueWr4LHsIUN8Bxs1aGyJdHVMy4br1g7MPqkoR0e8rVreTNulKaDx1+4lFdceWa1Uu7Yu0g9Ag==}
+  '@myriaddreamin/typst-ts-node-compiler-win32-x64-msvc@0.6.0':
+    resolution: {integrity: sha512-w5UEmXSZ+Eg7Y04EzjgqeHUo7P8bNz9S1c4CUfLrbfZvbTmYNjA0WeqZJ3+tV03BSVxiPiVhrfo95sLqKISNrg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@myriaddreamin/typst-ts-node-compiler@0.5.4':
-    resolution: {integrity: sha512-WAOUjOD+S2S3X/2X33PxDYn0XJ4ydqboxluIdFWU8yOlzn3K8CwoRN/GAbMA13vJTbZQMzjX3VmhMavFWeRtVA==}
+  '@myriaddreamin/typst-ts-node-compiler@0.6.0':
+    resolution: {integrity: sha512-C40MzRKZ8pDWzrS7VOtTypGyFaHTuZFFx3o/uQ6ryS2GqZkK3vGox4lIpR7ct11UHiAjQNR3LFQ5WjQ7P3niBQ==}
     engines: {node: '>= 10'}
 
-  '@myriaddreamin/typst-ts-renderer@0.5.4':
-    resolution: {integrity: sha512-Z3wvSv78kWgUdr23EXGXvqa/QeRnPjkmLkpu6Ne8pDWPWjHHL1j+Wy7cTdZos6bhAUQGMkdFbO+ZhHoBepTgcw==}
+  '@myriaddreamin/typst-ts-renderer@0.6.0':
+    resolution: {integrity: sha512-56Mids4E5Ob6LeEeXDedvmsVnEWnLmc1qeUOeUSruL/zI3S9QXleF/c3Os1FXwJmLuCFbWTEIq8Quh2cXlnxKw==}
 
-  '@myriaddreamin/typst.ts@0.5.4':
-    resolution: {integrity: sha512-Zn+dwiN+UuhFkl+9vO44fxj1QwHk4yunDrvY48iG3V3pIQsfNVySVOE8wjMSVAh496Mo63BFSIqzZRQj2ShS8g==}
+  '@myriaddreamin/typst.ts@0.6.0':
+    resolution: {integrity: sha512-IUpetG0NyF2H6eXRm4j+NsbanJHIvyrffHEijqYb6q128sLWQgT1FYJS+h7dtjXmrBEfnIl1mI80DyfDR6kB/w==}
     peerDependencies:
-      '@myriaddreamin/typst-ts-renderer': ^0.5.4
-      '@myriaddreamin/typst-ts-web-compiler': ^0.5.4
+      '@myriaddreamin/typst-ts-renderer': ^0.6.0
+      '@myriaddreamin/typst-ts-web-compiler': ^0.6.0
     peerDependenciesMeta:
       '@myriaddreamin/typst-ts-renderer':
         optional: true
@@ -1498,60 +1498,60 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@myriaddreamin/typst-ts-node-compiler-android-arm-eabi@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-android-arm-eabi@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-android-arm64@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-android-arm64@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-darwin-arm64@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-darwin-arm64@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-darwin-x64@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-darwin-x64@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-arm-gnueabihf@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-linux-arm-gnueabihf@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-arm64-gnu@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-linux-arm64-gnu@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-arm64-musl@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-linux-arm64-musl@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-x64-gnu@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-linux-x64-gnu@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-linux-x64-musl@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-linux-x64-musl@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-win32-arm64-msvc@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-win32-arm64-msvc@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler-win32-x64-msvc@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler-win32-x64-msvc@0.6.0':
     optional: true
 
-  '@myriaddreamin/typst-ts-node-compiler@0.5.4':
+  '@myriaddreamin/typst-ts-node-compiler@0.6.0':
     optionalDependencies:
-      '@myriaddreamin/typst-ts-node-compiler-android-arm-eabi': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-android-arm64': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-darwin-arm64': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-darwin-x64': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-linux-arm-gnueabihf': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-linux-arm64-gnu': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-linux-arm64-musl': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-linux-x64-gnu': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-linux-x64-musl': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-win32-arm64-msvc': 0.5.4
-      '@myriaddreamin/typst-ts-node-compiler-win32-x64-msvc': 0.5.4
+      '@myriaddreamin/typst-ts-node-compiler-android-arm-eabi': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-android-arm64': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-darwin-arm64': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-darwin-x64': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-linux-arm-gnueabihf': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-linux-arm64-gnu': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-linux-arm64-musl': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-linux-x64-gnu': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-linux-x64-musl': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-win32-arm64-msvc': 0.6.0
+      '@myriaddreamin/typst-ts-node-compiler-win32-x64-msvc': 0.6.0
 
-  '@myriaddreamin/typst-ts-renderer@0.5.4': {}
+  '@myriaddreamin/typst-ts-renderer@0.6.0': {}
 
-  '@myriaddreamin/typst.ts@0.5.4(@myriaddreamin/typst-ts-renderer@0.5.4)':
+  '@myriaddreamin/typst.ts@0.6.0(@myriaddreamin/typst-ts-renderer@0.6.0)':
     dependencies:
       idb: 7.1.1
     optionalDependencies:
-      '@myriaddreamin/typst-ts-renderer': 0.5.4
+      '@myriaddreamin/typst-ts-renderer': 0.6.0
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
