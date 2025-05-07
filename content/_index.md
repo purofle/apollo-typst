@@ -22,3 +22,4 @@ template = "homepage.html"
 - [Alan の blog](https://blog.alanlin.icu)
 - [白糖的记事本](https://blog.sugarmgp.icu)
 - [Kevin8w的小窝](https://hugo.utermux.dev)
+- [麻雀小窝](https://blog.sparrowhe.top)
