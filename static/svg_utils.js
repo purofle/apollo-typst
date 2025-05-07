@@ -79,35 +79,6 @@ function nextNode(node) {
         return node.nextSibling;
     }
 }
-function getRangeSelectedNodes(range, filter) {
-    var node = range.startContainer;
-    var endNode = range.endContainer;
-    // Special case for a range that is contained within a single node
-    if (node === endNode) {
-        if (filter(node)) {
-            return [node];
-        }
-        if (filter(node.parentElement)) {
-            return [node.parentElement];
-        }
-    }
-    // Iterate nodes until we hit the end container
-    let rangeNodes = [];
-    while (node && node !== endNode) {
-        node = nextNode(node);
-        if (filter(node)) {
-            rangeNodes.push(node);
-        }
-    }
-    // Add partially selected nodes at the start of the range
-    node = range.startContainer;
-    while (node && node !== range.commonAncestorContainer) {
-        if (filter(node))
-            rangeNodes.unshift(node);
-        node = node.parentNode;
-    }
-    return rangeNodes;
-}
 function getGlyphLenShape(glyphRefs) {
     return glyphRefs.map(e => {
         const href = e.getAttribute('href');
