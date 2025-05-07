@@ -52,7 +52,6 @@ const gr = (window.typstGetRelatedElements = (elem) => {
     return relatedElements;
 });
 /// Get all related elements of an event target (must be an element)
-const getRelatedElements = (event) => gr(event.target);
 const findAncestor = (el, cls) => {
     while (el && !el.classList.contains(cls))
         el = el.parentElement;
@@ -84,7 +83,7 @@ function getRangeSelectedNodes(range, filter) {
     var node = range.startContainer;
     var endNode = range.endContainer;
     // Special case for a range that is contained within a single node
-    if (node == endNode) {
+    if (node === endNode) {
         if (filter(node)) {
             return [node];
         }
@@ -93,8 +92,8 @@ function getRangeSelectedNodes(range, filter) {
         }
     }
     // Iterate nodes until we hit the end container
-    var rangeNodes = [];
-    while (node && node != endNode) {
+    let rangeNodes = [];
+    while (node && node !== endNode) {
         node = nextNode(node);
         if (filter(node)) {
             rangeNodes.push(node);
@@ -102,28 +101,12 @@ function getRangeSelectedNodes(range, filter) {
     }
     // Add partially selected nodes at the start of the range
     node = range.startContainer;
-    while (node && node != range.commonAncestorContainer) {
+    while (node && node !== range.commonAncestorContainer) {
         if (filter(node))
             rangeNodes.unshift(node);
         node = node.parentNode;
     }
     return rangeNodes;
-}
-function getSelectedNodes(filter) {
-    if (window.getSelection) {
-        var sel = window.getSelection();
-        if (!sel.isCollapsed) {
-            if (sel.rangeCount === 1) {
-                return getRangeSelectedNodes(sel.getRangeAt(0), filter);
-            }
-            let result = [];
-            for (let i = 0, e = sel.rangeCount; i < e; i++) {
-                result.push(...getRangeSelectedNodes(sel.getRangeAt(i), filter));
-            }
-            return result;
-        }
-    }
-    return [];
 }
 function getGlyphLenShape(glyphRefs) {
     return glyphRefs.map(e => {
@@ -441,7 +424,7 @@ window.layoutText = async function (svg) {
             });
         });
     }
-    if (semanticContainer && paraBox.right != 0) {
+    if (semanticContainer && paraBox.right !== 0) {
         paraBoxes.push([null, paraBox]);
     }
     // get all elements in semantic container
@@ -462,7 +445,6 @@ window.layoutText = async function (svg) {
     // }
     if (semanticContainer) {
         const perfBegin = performance.now();
-        const colorRotate = ['red', 'green', 'blue', 'purple', 'orange'];
         let cnt = 0;
         for (let [elem, box] of paraBoxes) {
             if (cnt < paraBoxes.length - 1) {
@@ -472,12 +454,12 @@ window.layoutText = async function (svg) {
                 let rightLess = box.right < nextBox.right;
                 let bottomLess = box.bottom < nextBox.bottom;
                 // adjust horizontal box
-                if (leftLess != rightLess) {
+                if (leftLess !== rightLess) {
                     box.left = Math.min(box.left, nextBox.left);
                     box.right = Math.max(box.right, nextBox.right);
                 }
                 // adjust vertical box
-                if (topLess != bottomLess) {
+                if (topLess !== bottomLess) {
                     box.top = Math.min(box.top, nextBox.top);
                     box.bottom = Math.max(box.bottom, nextBox.bottom);
                 }
@@ -530,7 +512,7 @@ window.handleTypstLocation = function (elem, page, x, y, options) {
         if (children[i].tagName === 'g') {
             nthPage++;
         }
-        if (nthPage == page) {
+        if (nthPage === page) {
             // evaluate window viewport 1vw
             const pw = window.innerWidth * 0.01;
             const ph = window.innerHeight * 0.01;
