@@ -7,6 +7,10 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+generate_feeds = true
+
+author = "日落果"
+
 theme = "apollo"
 
 taxonomies = [{ name = "tags", feed = true }]
@@ -30,6 +34,7 @@ menu = [
 socials = [
   { name = "twitter", url = "https://twitter.com/purofle", icon = "twitter" },
   { name = "github", url = "https://github.com/purofle", icon = "github" },
+  { name = "rss", url = "https://blog.archlinux.tech/atom.xml", icon = "rss" },
 ]
 
 insert_anchor_links = "heading"
