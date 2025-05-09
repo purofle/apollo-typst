@@ -44,7 +44,7 @@ $ 3 times 9=27 mod 10 = 7 $
 
 == 逆元计算
 定义：
-如果一个线性同余方程$"ax" equiv 1 mod b$，则$x$称为$a mod b$的逆元，记作$a^(-1)$.@number_theory_inverse
+如果一个线性同余方程$"ax" equiv 1 mod b$，则$x$称为$a mod b$的逆元#super[@number_theory_inverse]，记作$a^(-1)$.
 
 那么逆元运算有什么用呢？可以使用逆元计算椭圆曲线域上的点加法。在开始之前，我们先学习椭圆曲线。
 
