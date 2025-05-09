@@ -16,6 +16,10 @@
         <a href={{ get_url(path=menu.url) }} style="margin-left: 0.5em">{{ menu.name }}</a>
         {% endfor %}
 
+        |<a href="#" id="language-toggle">
+        ZH
+    </a>
+
         {% if config.extra.theme | default(value="toggle") == "toggle" %}
         |<a id="dark-mode-toggle" onclick="toggleTheme(); typstChangeTheme(); event.preventDefault();" href="#">
             <img src={{ get_url(path="feather/sun.svg") }} id="sun-icon" style="filter: invert(1);" alt="Light" />

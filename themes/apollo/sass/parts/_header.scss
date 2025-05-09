@@ -52,6 +52,14 @@ header .socials {
     justify-content: center;
 }
 
+#language-toggle {
+  border-bottom: none;
+
+  .hover {
+    border-bottom: none;
+  }
+}
+
 .socials {
     /* flex-child */
     flex-grow: 0;
