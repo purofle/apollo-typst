@@ -119,6 +119,4 @@ $ 2y"dy"/"dx"=3x^2+a $
 最后解出$"dy"/"dx"$即可：
 $ "dy"/"dx"=(3x^2+a)/(2y) $
 
-= 累死我了，剩下的改天接着写
-
 #bibliography("refs.bib")
