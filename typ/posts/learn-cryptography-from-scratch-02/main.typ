@@ -11,7 +11,7 @@
 }
 
 #show: project.with(
-  title: "从零学习密码学-Keccak研究",
+  title: "从零学习密码学-Keccak 研究",
   authors: (
     (
       name: "purofle",
@@ -23,7 +23,7 @@
 #set par(justify: true)
 #set quote(block: true)
 
-= 从零学习密码学-Keccak研究
+// = 从零学习密码学-Keccak研究
 
 == 海绵函数
 
