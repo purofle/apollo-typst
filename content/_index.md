@@ -14,6 +14,7 @@ template = "homepage.html"
 - [梦的开始 - 博客复活](posts/dream-start)
 - [在 Finder 中使用 VSCode 打开文件夹](posts/open-folder-in-finder-through-vscode)
 - [从零学习密码学笔记-有限域与椭圆曲线](posts/learn-cryptography-from-scratch-01)
+- [从零学习密码学-Keccak研究](posts/learn-cryptography-from-scratch-02)
 
 这个博客所有内容都使用 [Typst](https://typst.app/) 进行编写排版，使用 [Zola](https://www.getzola.org/) 进行构建，希望能给你带来不一样的体验。
 
