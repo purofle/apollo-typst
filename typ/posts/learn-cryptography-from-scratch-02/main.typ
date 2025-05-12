@@ -55,7 +55,7 @@ Keccak 其实就是一系列海绵函数. 它使用一个叫做multi-rate的填�
 2. $P=1||0^j||1$
 ]
 
-Keccak的置换函数使用 $"KECCAK"-p[b, n_r]$ 表示，它的总长是 $b$, $n_r$ 代表论数.
+Keccak的置换函数使用 $"KECCAK"-p[b, n_r]$ 表示，它的总长是 $b$, $n_r$ 代表轮数.
 
 在接下来我们还会出现两个参数，$w$ 和 $ell$, 其中 $w = b/25$，$ell=log_2(b/25)$.
 
@@ -88,4 +88,7 @@ $ "Rnd"(A,i_r)=iota(chi(pi(rho(theta(A)))), i_r) $
    - 使$A'[x,y,z]=A[x,y,(z-(t+1)(t+2)/2) mod w]$
    - 使 $(x,y)=(y,(2x+3y) mod 5)$
 ]
+
+= 剩下高考完再写
+
 #bibliography("refs.bib")
