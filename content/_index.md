@@ -20,7 +20,7 @@ template = "homepage.html"
 
 ## 这里是一些友情链接
 - [AtomAlpaca's Blog](https://blog.atal.moe)
-- [MBRjun-Blog](https://www.mbrjun.cn)
+- [MBRjun-Blog](https://www.libmbr.com)
 - [Alan の blog](https://blog.alanlin.icu)
 - [白糖的记事本](https://blog.sugarmgp.icu)
 - [Kevin8w的小窝](https://hugo.utermux.dev)
